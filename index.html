@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TennisPro — Weekend Tennis Academy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">TENNIS<span>PRO</span></div>
+  <ul class="nav-links">
+    <li><a href="#weekend">Weekend</a></li>
+    <li><a href="#coaches">Coaches</a></li>
+    <li><a href="#booking">Booking</a></li>
+    <li><a href="#my-schedules">Jadwal Saya</a></li> 
+    <li><a href="#membership">Membership</a></li>
+  </ul>
+  
+  <div class="nav-auth" id="navAuth">
+    <button class="btn-ghost" onclick="openModal('login')">Masuk</button>
+    <button class="btn-red" onclick="openModal('register')">Daftar</button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-court-line"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Digital Tennis Academy Ecosystem
+    </div>
+    <h1 class="hero-title">
+      Elevate Your
+      <span class="accent">Game</span>
+    </h1>
+    <p class="hero-sub">
+      Academy tennis premium modern. Latihan eksklusif setiap weekend dengan coach profesional berpengalaman. Bukan sekadar sewa lapangan — pengalaman penuh luxury sports club.
+    </p>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="scrollToSection('booking')">Book Weekend Session</button>
+      <button class="btn-outline" onclick="scrollToSection('coaches')">Lihat Coach</button>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">87+</div>
+        <div class="hero-stat-label">Active Students</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Pro Coaches</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">4.9★</div>
+        <div class="hero-stat-label">Avg Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-video-box">
+    <video autoplay loop muted playsinline>
+      <source src="vidiotennis.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Premium Weekend Training <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Professional Coaching <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Indoor &amp; Outdoor Courts <span class="marquee-dot"></span></span>
+    <span class="marquee-item">QRIS / GoPay / OVO Payment <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Tournament Ready Program <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Weekend Only Exclusive <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Premium Weekend Training <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Professional Coaching <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Indoor &amp; Outdoor Courts <span class="marquee-dot"></span></span>
+    <span class="marquee-item">QRIS / GoPay / OVO Payment <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Tournament Ready Program <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Weekend Only Exclusive <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stats-bar-item">
+    <span class="stats-bar-num">1,250</span>
+    <span class="stats-bar-label">Training Sessions</span>
+  </div>
+  <div class="stats-bar-item">
+    <span class="stats-bar-num">340+</span>
+    <span class="stats-bar-label">Students Trained</span>
+  </div>
+  <div class="stats-bar-item">
+    <span class="stats-bar-num">14</span>
+    <span class="stats-bar-label">Tournament Wins</span>
+  </div>
+  <div class="stats-bar-item">
+    <span class="stats-bar-num">4</span>
+    <span class="stats-bar-label">Premium Courts</span>
+  </div>
+</div>
+
+<section id="weekend">
+  <div class="section-label">🎾 Kenapa Weekend?</div>
+  <h2 class="section-title">Weekend Tennis<br>Academy</h2>
+  <div class="divider"></div>
+  <p class="section-sub">
+    Sistem booking eksklusif setiap Sabtu &amp; Minggu. Dirancang untuk pelajar, mahasiswa, dan profesional yang ingin latihan rutin tanpa ganggu jadwal kerja.
+  </p>
+
+  <div class="weekend-grid">
+    <div class="weekend-days reveal">
+      <div class="day-card inactive">
+        <div class="day-name">Sen</div>
+        <span class="day-badge badge-disabled">Unavailable</span>
+      </div>
+      <div class="day-card inactive">
+        <div class="day-name">Sel</div>
+        <span class="day-badge badge-disabled">Unavailable</span>
+      </div>
+      <div class="day-card inactive">
+        <div class="day-name">Rab</div>
+        <span class="day-badge badge-disabled">Unavailable</span>
+      </div>
+      <div class="day-card inactive">
+        <div class="day-name">Kam</div>
+        <span class="day-badge badge-disabled">Unavailable</span>
+      </div>
+      <div class="day-card active">
+        <div class="day-name">Sabtu</div>
+        <div class="day-slots">
+          <span class="slot-time">07:00</span>
+          <span class="slot-time">10:00</span>
+          <span class="slot-time">18:00</span>
+        </div>
+        <span class="day-badge badge-available">✓ Available</span>
+      </div>
+      <div class="day-card active">
+        <div class="day-name">Minggu</div>
+        <div class="day-slots">
+          <span class="slot-time">08:00</span>
+          <span class="slot-time">13:00</span>
+          <span class="slot-time">19:00</span>
+        </div>
+        <span class="day-badge badge-available">✓ Available</span>
+      </div>
+    </div>
+
+    <div class="weekend-features reveal">
+      <div class="feature-row">
+        <div class="feature-icon">🎯</div>
+        <div>
+          <div class="feature-title">Lebih Realistis</div>
+          <div class="feature-desc">Jadwal yang cocok untuk pelajar, mahasiswa, dan pekerja. Tidak ganggu produktivitas harianmu.</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon">👨‍🏫</div>
+        <div>
+          <div class="feature-title">Coach Terkonsentrasi</div>
+          <div class="feature-desc">Semua coach fokus di weekend. Perhatian penuh tanpa distraksi. Latihan lebih efektif dan intensif.</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon">🏟️</div>
+        <div>
+          <div class="feature-title">Court Management Mudah</div>
+          <div class="feature-desc">4 lapangan premium tersedia penuh. Indoor &amp; outdoor, hard court &amp; clay. Selalu terawat &amp; siap pakai.</div>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon">👑</div>
+        <div>
+          <div class="feature-title">Komunitas Weekend</div>
+          <div class="feature-desc">Bergabung dengan komunitas tennis yang solid. Latihan bareng, tumbuh bersama. Weekend jadi lebih bermakna.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coaches">
+  <div class="section-label">👨‍🏫 Tim Pelatih</div>
+  <h2 class="section-title">Professional<br>Coaches</h2>
+  <div class="divider"></div>
+  <p class="section-sub">Dilatih oleh coach berpengalaman dengan track record turnamen nasional dan internasional. Klik kartu untuk melihat profil lengkap.</p>
+
+  <div class="coaches-grid">
+    <div class="coach-card reveal" onclick="openCoachModal('coach-daniel')">
+      <div class="coach-photo" style="background: linear-gradient(135deg, #3d0a10 0%, #1a0608 100%);">
+        <img src="coach3.png" alt="Coach Daniel" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">        
+        <span class="coach-level level-elite">Elite Coach</span>
+        <span class="coach-avail avail-red">
+          <span class="avail-dot"></span>🔥 Almost Full
+        </span>
+      </div>
+      <div class="coach-info">
+        <div class="coach-name">Coach Daniel</div>
+        <div class="coach-spec">Power Serve · Tournament</div>
+        <div class="coach-meta">
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">4.9★</div>
+            <div class="coach-meta-key">Rating</div>
+          </div>
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">87</div>
+            <div class="coach-meta-key">Students</div>
+          </div>
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">8yr</div>
+            <div class="coach-meta-key">Exp</div>
+          </div>
+        </div>
+        <div class="coach-tags">
+          <span class="coach-tag hot">Power Serve</span>
+          <span class="coach-tag hot">Tournament</span>
+          <span class="coach-tag">Forehand</span>
+          <span class="coach-tag">Advanced</span>
+        </div>
+        <button class="coach-cta">Lihat Profil & Booking</button>
+      </div>
+    </div>
+
+    <div class="coach-card reveal" style="transition-delay: .1s" onclick="openCoachModal('coach-sarah')">
+      <div class="coach-photo" style="background: linear-gradient(135deg, #1a0a2e 0%, #0d0615 100%);">
+        <img src="coach1.png" alt="Coach Sarah" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">        
+        <span class="coach-level level-pro">Pro Coach</span>
+        <span class="coach-avail avail-green">
+          <span class="avail-dot"></span>Available
+        </span>
+      </div>
+      <div class="coach-info">
+        <div class="coach-name">Coach Sarah</div>
+        <div class="coach-spec">Beginner Friendly · Footwork</div>
+        <div class="coach-meta">
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">4.8★</div>
+            <div class="coach-meta-key">Rating</div>
+          </div>
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">63</div>
+            <div class="coach-meta-key">Students</div>
+          </div>
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">5yr</div>
+            <div class="coach-meta-key">Exp</div>
+          </div>
+        </div>
+        <div class="coach-tags">
+          <span class="coach-tag hot">Beginner</span>
+          <span class="coach-tag">Footwork</span>
+          <span class="coach-tag">Backhand</span>
+          <span class="coach-tag">Kids</span>
+        </div>
+        <button class="coach-cta">Lihat Profil & Booking</button>
+      </div>
+    </div>
+
+    <div class="coach-card reveal" style="transition-delay: .2s" onclick="openCoachModal('coach-michael')">
+      <div class="coach-photo" style="background: linear-gradient(135deg, #0a1a0a 0%, #061206 100%);">
+        <img src="coach2.png" alt="Coach Michael" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+        <span class="coach-level level-elite">Elite Coach</span>
+        <span class="coach-avail avail-green">
+          <span class="avail-dot"></span>Available
+        </span>
+      </div>
+      <div class="coach-info">
+        <div class="coach-name">Coach Michael</div>
+        <div class="coach-spec">Backhand · Tactics</div>
+        <div class="coach-meta">
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">5.0★</div>
+            <div class="coach-meta-key">Rating</div>
+          </div>
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">54</div>
+            <div class="coach-meta-key">Students</div>
+          </div>
+          <div class="coach-meta-item">
+            <div class="coach-meta-val">12yr</div>
+            <div class="coach-meta-key">Exp</div>
+          </div>
+        </div>
+        <div class="coach-tags">
+          <span class="coach-tag hot">Backhand</span>
+          <span class="coach-tag hot">Tactics</span>
+          <span class="coach-tag">Forehand</span>
+          <span class="coach-tag">Intermediate</span>
+        </div>
+        <button class="coach-cta">Lihat Profil & Booking</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="section-label">📅 Sistem Booking</div>
+  <h2 class="section-title">Book Your<br>Weekend Session</h2>
+  <div class="divider"></div>
+  <p class="section-sub">Pilih tanggal, waktu, coach, dan lapangan. Hanya tersedia Sabtu &amp; Minggu.</p>
+
+  <div class="booking-wrap reveal">
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div class="booking-panel">
+        <div class="panel-title">1. Pilih Tanggal</div>
+        <div class="calendar-header">
+          <button class="cal-nav" onclick="prevMonth()">‹</button>
+          <div class="cal-month" id="calMonth">MEI 2026</div>
+          <button class="cal-nav" onclick="nextMonth()">›</button>
+        </div>
+        <div class="cal-grid" id="calGrid">
+        </div>
+      </div>
+
+      <div class="booking-panel">
+        <div class="panel-title">2. Pilih Waktu</div>
+
+        <div class="time-group-title">⛅ Pagi</div>
+        <div class="time-slots">
+          <div class="time-slot" onclick="selectTime(this, '07:00')">07:00</div>
+          <div class="time-slot" onclick="selectTime(this, '09:00')">09:00</div>
+          <div class="time-slot" onclick="selectTime(this, '11:00')">11:00</div>
+        </div>
+
+        <div class="time-group-title">☀️ Siang</div>
+        <div class="time-slots">
+          <div class="time-slot" onclick="selectTime(this, '13:00')">13:00</div>
+          <div class="time-slot full">15:00 Full</div>
+          <div class="time-slot" onclick="selectTime(this, '17:00')">17:00</div>
+        </div>
+
+        <div class="time-group-title">🌙 Malam</div>
+        <div class="time-slots">
+          <div class="time-slot" onclick="selectTime(this, '18:00')">18:00</div>
+          <div class="time-slot" onclick="selectTime(this, '20:00')">20:00</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div class="booking-panel">
+        <div class="panel-title">3. Pilih Coach</div>
+        <div class="court-select">
+          <div class="court-opt" onclick="selectCoach(this, 'Coach Daniel')">
+            <span class="court-opt-icon">🏆</span>
+            Coach Daniel<br>
+            <small style="color: var(--red-bright); font-size: .65rem;">Elite · 4.9★</small>
+          </div>
+          <div class="court-opt" onclick="selectCoach(this, 'Coach Sarah')">
+            <span class="court-opt-icon">⭐</span>
+            Coach Sarah<br>
+            <small style="color: var(--muted); font-size: .65rem;">Pro · 4.8★</small>
+          </div>
+          <div class="court-opt" onclick="selectCoach(this, 'Coach Michael')">
+            <span class="court-opt-icon">👑</span>
+            Coach Michael<br>
+            <small style="color: var(--red-bright); font-size: .65rem;">Elite · 5.0★</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-panel">
+        <div class="panel-title">4. Pilih Lapangan</div>
+        <div class="court-select">
+          <div class="court-opt" onclick="selectCourt(this, 'Arena Tenis Bogor')">
+            <span class="court-opt-icon">🏟️</span>Arena Tenis Bogor
+          </div>
+          <div class="court-opt" onclick="selectCourt(this, 'Gor Padjajaran')">
+            <span class="court-opt-icon">🏟️</span>Gor Padjajaran
+          </div>
+          <div class="court-opt" onclick="selectCourt(this, 'Lapangan Tennis Yasmin')">
+            <span class="court-opt-icon">⛳</span>Lapangan Tennis Yasmin
+          </div>
+          <div class="court-opt" onclick="selectCourt(this, 'Tennis Taman Cimanggu')">
+            <span class="court-opt-icon">🌿</span>Tennis Taman Cimanggu
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-panel">
+        <div class="panel-title">5. Metode Pembayaran</div>
+        <div class="payment-methods">
+          <div class="pay-btn" onclick="selectPay(this, 'QRIS')">QRIS</div>
+          <div class="pay-btn" onclick="selectPay(this, 'DANA')">DANA</div>
+          <div class="pay-btn" onclick="selectPay(this, 'OVO')">OVO</div>
+          <div class="pay-btn" onclick="selectPay(this, 'GoPay')">GoPay</div>
+          <div class="pay-btn" onclick="selectPay(this, 'Bank Transfer')">Bank</div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <div class="summary-item">
+            <span class="summary-label">Tanggal</span>
+            <span class="summary-value" id="sumDate">—</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Waktu</span>
+            <span class="summary-value" id="sumTime">—</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Coach</span>
+            <span class="summary-value" id="sumCoach">—</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Lapangan</span>
+            <span class="summary-value" id="sumCourt">—</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Pembayaran</span>
+            <span class="summary-value" id="sumPay">—</span>
+          </div>
+        </div>
+
+        <div class="booking-total">
+          <div>
+            <div class="total-label">Total Pembayaran</div>
+            <div style="font-size: .75rem; color: var(--muted);">1 sesi · 90 menit</div>
+          </div>
+          <div class="total-price">Rp 150.000</div>
+        </div>
+
+        <button class="confirm-btn" onclick="confirmBooking()">Konfirmasi Booking →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SENSOR KETERSEDIAAN LAPANGAN ══ -->
+  <div class="availability-sensor" id="availabilitySensor">
+    <div class="sensor-header">
+      <div class="sensor-header-left">
+        <span class="sensor-icon">📡</span>
+        <div>
+          <div class="sensor-title">Sensor Ketersediaan Lapangan</div>
+          <div class="sensor-subtitle" id="sensorSubtitle">Pilih tanggal untuk melihat ketersediaan real-time</div>
+        </div>
+      </div>
+      <div class="sensor-legend">
+        <div class="sensor-legend-item">
+          <span class="sensor-dot sensor-dot-booked"></span>Terpakai
+        </div>
+        <div class="sensor-legend-item">
+          <span class="sensor-dot sensor-dot-available"></span>Tersedia
+        </div>
+        <div class="sensor-legend-item">
+          <span class="sensor-dot sensor-dot-cancelled"></span>Dibatalkan
+        </div>
+      </div>
+    </div>
+
+    <div class="sensor-trust-bar">
+      <span class="sensor-trust-icon">🔒</span>
+      Slot yang sudah terpesan <strong>tidak akan dijual</strong> ke pelanggan lain. Data ini diperbarui secara <strong>real-time</strong> langsung dari sistem booking kami.
+    </div>
+
+    <div id="sensorState" class="sensor-state-idle">
+      <div class="sensor-idle-icon">📅</div>
+      <div class="sensor-idle-text">Pilih tanggal pada kalender di atas untuk melihat ketersediaan lapangan hari itu secara real-time.</div>
+    </div>
+
+    <div id="sensorGrid" style="display:none;">
+      <div class="sensor-grid-wrap">
+        <table class="sensor-table" id="sensorTable"></table>
+      </div>
+      <div class="sensor-summary" id="sensorSummary"></div>
+    </div>
+  </div>
+</section>
+
+<section id="my-schedules" class="my-schedules reveal">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">
+      Jadwal <span style="color: var(--red-bright);">Saya</span>
+    </h2>
+    <p style="color: #777; font-size: 1rem; margin-bottom: 2.5rem;">Daftar sesi latihan aktif kamu yang sedang diproses atau sudah dijadwalkan.</p>
+    
+    <div id="schedulesContainer" class="schedules-grid">
+      <div class="no-booking-card">
+        <p>Belum ada jadwal latihan aktif. Silakan lakukan pengisian formulir booking di atas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="membership">
+  <div class="section-label">👑 Paket Latihan</div>
+  <h2 class="section-title">Choose Your<br>Membership</h2>
+  <div class="divider"></div>
+
+  <div class="membership-grid">
+    <div class="tier-card reveal">
+      <div class="tier-name" style="color: #cd7f32;">Bronze</div>
+      <div class="tier-price">
+        <div class="tier-amount">250k</div>
+        <div class="tier-period">/ 2 minggu · masa aktif 14 hari</div>
+      </div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li class="active"><span class="check">✓</span> Akses booking regular</li>
+        <li class="active"><span class="check">✓</span> 1 sesi trial gratis</li>
+        <li class="active"><span class="check">✓</span> Profil student aktif</li>
+        <li><span class="cross">✗</span> Priority booking slot</li>
+        <li><span class="cross">✗</span> Diskon coach fee</li>
+      </ul>
+      <button class="tier-cta btn-ghost"
+        style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 2px; text-transform: uppercase;"
+        onclick="openMembershipPayment('Bronze', 'Rp 250.000 / 2 minggu')">
+        Mulai Bronze
+      </button>
+    </div>
+
+    <div class="tier-card featured reveal" style="transition-delay: .1s">
+      <div class="tier-badge">⚡ Most Popular</div>
+      <div class="tier-name" style="color: var(--red-bright);">Silver</div>
+      <div class="tier-price">
+        <div class="tier-amount">500k</div>
+        <div class="tier-period">/ 1 bulan · masa aktif 30 hari</div>
+      </div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li class="active"><span class="check">✓</span> Semua fitur Bronze</li>
+        <li class="active"><span class="check">✓</span> Priority booking slot</li>
+        <li class="active"><span class="check">✓</span> Akses slot eksklusif</li>
+        <li class="active"><span class="check">✓</span> Diskon 15% coach fee</li>
+        <li><span class="cross">✗</span> Private 1:1 session</li>
+      </ul>
+      <button class="tier-cta btn-red" onclick="openMembershipPayment('Silver', 'Rp 500.000 / 1 bulan')">
+        Mulai Silver
+      </button>
+    </div>
+
+    <div class="tier-card reveal" style="transition-delay: .2s">
+      <div class="tier-name" style="color: var(--gold);">Elite</div>
+      <div class="tier-price">
+        <div class="tier-amount">800k</div>
+        <div class="tier-period">/ 2 bulan · paket hemat luxury</div>
+      </div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li class="active"><span class="check">✓</span> Semua fitur Silver</li>
+        <li class="active"><span class="check">✓</span> Private 1:1 session</li>
+        <li class="active"><span class="check">✓</span> Video analysis training</li>
+        <li class="active"><span class="check">✓</span> Tournament preparation</li>
+        <li class="active"><span class="check">✓</span> Diskon 30% coach fee</li>
+      </ul>
+      <button class="tier-cta btn-ghost"
+        style="font-family: 'Barlow Condensed', sans-serif; letter-spacing: 2px; text-transform: uppercase;"
+        onclick="openMembershipPayment('Elite', 'Rp 800.000 / 2 bulan')">
+        Go Elite
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="section-label">⭐ Testimoni</div>
+  <h2 class="section-title">What Students<br>Say</h2>
+  <div class="divider"></div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"Coach Daniel luar biasa! Serve saya improve drastis dalam 3 weekend. Sistem booking-nya mudah banget, tinggal pilih Sabtu atau Minggu."</div>
+      <div class="review-author">
+        <div class="review-avatar">RK</div>
+        <div>
+          <div class="review-name">Rifki Kurniawan</div>
+          <div class="review-coach">Coach Daniel · 6 bulan</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: .1s">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"Coach Sarah sangat sabar untuk pemula seperti saya. Footwork saya yang dulu berantakan sekarang sudah jauh lebih baik. Worth it banget!"</div>
+      <div class="review-author">
+        <div class="review-avatar">AP</div>
+        <div>
+          <div class="review-name">Anisa Putri</div>
+          <div class="review-coach">Coach Sarah · 4 bulan</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay: .2s">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">"Baru 2 bulan sama Coach Michael, backhand saya sudah bisa diandalkan di match. Akademi ini beneran premium, bukan sekedar lapangan biasa."</div>
+      <div class="review-author">
+        <div class="review-avatar">BH</div>
+        <div>
+          <div class="review-name">Bagas Hartanto</div>
+          <div class="review-coach">Coach Michael · 2 bulan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">TENNIS<span>PRO</span></div>
+      <div class="footer-tagline">Digital Tennis Academy Ecosystem. Latihan eksklusif setiap weekend dengan coach profesional berpengalaman.</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Platform</div>
+      <ul class="footer-links">
+        <li><a href="#weekend">Weekend Training</a></li>
+        <li><a href="#coaches">Coach Profiles</a></li>
+        <li><a href="#booking">Book Session</a></li>
+        <li><a href="#membership">Membership</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Kebijakan Booking</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Payment</div>
+      <ul class="footer-links">
+        <li><a href="#">QRIS</a></li>
+        <li><a href="#">DANA / OVO</a></li>
+        <li><a href="#">GoPay</a></li>
+        <li><a href="#">Bank Transfer</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 TennisPro Academy. By Kelompok 2 Innovation Kelas C.</div>
+    <div style="font-size: .7rem; color: var(--faint); letter-spacing: 1px;">WEEKEND ONLY · PREMIUM COACHING · Bogor</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">
+  <div class="toast-icon">✓</div>
+  <div>
+    <div class="toast-title" id="toastTitle">Booking Confirmed!</div>
+    <div class="toast-sub" id="toastSub">Cek email untuk detail session.</div>
+  </div>
+</div>
+
+<div class="payment-modal" id="paymentModal">
+  <div class="payment-box">
+    <button class="close-pay" onclick="closePaymentModal()">✕</button>
+
+    <h2 class="pay-title">Pembayaran Booking</h2>
+    <p class="pay-subtitle">Selesaikan pembayaran untuk mengamankan slot latihan kamu.</p>
+
+    <div class="payment-method-title">
+      Metode Pembayaran: <span id="payMethodName">QRIS</span>
+    </div>
+
+    <div class="qris-wrapper">
+      <div class="qris-holder">
+        <img src="qris.png" class="qris-img" alt="Kode QRIS Pembayaran TennisPro">
+      </div>
+      <div class="qris-note">Scan QR menggunakan aplikasi bank / e-wallet</div>
+    </div>
+
+    <div class="payment-section">
+      <div class="section-title">Transfer Bank</div>
+      <div class="bank-box">
+        <div class="bank-name">BCA</div>
+        <strong>1234567890</strong>
+        <small>a/n TennisPro Academy</small>
+      </div>
+    </div>
+
+    <div class="payment-section">
+      <div class="section-title">E-Wallet</div>
+      <div class="ewallet-list">
+        <div class="wallet-item">DANA : 08123456789 (Tennispro)</div>
+        <div class="wallet-item">OVO : 08123456789 (Tennispro)</div>
+        <div class="wallet-item">GoPay : 08123456789 (Tennispro)</div>
+      </div>
+    </div>
+
+    <button class="confirm-payment-btn" onclick="finishPayment()">Saya Sudah Bayar</button>
+  </div>
+</div>
+
+<div class="auth-modal" id="authModal">
+  <div class="auth-box">
+    <button class="close-modal" onclick="isLoggedIn ? closeModal() : showToast('⚠️ Wajib Login', 'Kamu harus login terlebih dahulu.')">✕</button>
+    
+    <div class="auth-tabs">
+      <button id="tabLogin" class="auth-tab active" onclick="switchTab('login')">Masuk</button>
+      <button id="tabRegister" class="auth-tab" onclick="switchTab('register')">Daftar</button>
+    </div>
+
+    <h3 id="modalTitle" class="modal-title">Masuk</h3>
+
+    <div id="formLogin" class="auth-form">
+      <div class="input-group">
+        <label>Email atau Username</label>
+        <input type="email" placeholder="Masukkan email kamu..." required>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" required>
+      </div>
+      <button class="btn-submit" onclick="handleLogin()">Masuk Sekarang</button>
+    </div>
+
+    <div id="formRegister" class="auth-form" style="display: none;">
+      <div class="input-group">
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="Nama lengkap kamu..." required>
+      </div>
+      <div class="input-group">
+        <label>Email Aktif</label>
+        <input type="email" placeholder="contoh@email.com" required>
+      </div>
+      <div class="input-group">
+        <label>Buat Password</label>
+        <input type="password" placeholder="Minimal 6 karakter" required>
+      </div>
+      <button class="btn-submit" onclick="handleRegister()">Buat Akun Baru</button>
+    </div>
+  </div>
+</div>
+
+<div class="auth-modal" id="coachDetailModal" style="z-index: 9999;">
+  <div class="auth-box coach-detail-box" style="max-width: 550px; text-align: left;">
+    <button class="close-modal" onclick="closeCoachModal()">✕</button>
+    
+    <div style="display: flex; align-items: center; gap: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
+      <div id="modalCoachAvatar" style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--red-bright), var(--gold)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--white); box-shadow: 0 0 15px rgba(232, 25, 46, 0.3);">
+        CD
+      </div>
+      <div>
+        <h2 id="modalCoachName" style="font-size: 2rem; line-height: 1.1; margin-bottom: 0.2rem;">Nama Coach</h2>
+        <p id="modalCoachSpec" style="color: var(--red-bright); font-size: 0.95rem; font-weight: 600;">Spesialisasi</p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      <div>
+        <h3 style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 0.5rem; border-left: 3px solid var(--red-bright); padding-left: 0.5rem;">Tentang Coach</h3>
+        <p id="modalCoachBio" style="color: var(--muted); font-size: 0.95rem; line-height: 1.6;">Bio singkat coach.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 0.5rem; border-left: 3px solid var(--red-bright); padding-left: 0.5rem;">Pengalaman & Sertifikasi</h3>
+        <ul id="modalCoachExp" style="display: flex; flex-direction: column; gap: 0.5rem; list-style: none; padding: 0;">
+          </ul>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 0.5rem; border-left: 3px solid var(--red-bright); padding-left: 0.5rem;">Gaya Melatih (Coaching Style)</h3>
+        <p id="modalCoachStyle" style="color: var(--muted); font-size: 0.95rem; line-height: 1.6; font-style: italic;"></p>
+      </div>
+    </div>
+
+    <button id="modalCoachCTA" class="confirm-btn" style="margin-top: 2rem; width: 100%;">Pilih Coach Ini & Booking</button>
+  </div>
+</div>
+
+<div class="auth-modal" id="cancelModal">
+  <div class="auth-box" style="max-width: 440px; text-align: left;">
+    <button class="close-modal" onclick="closeCancelModal()">✕</button>
+
+    <h3 class="modal-title" style="font-size: 1.8rem; margin-bottom: 0.4rem;">Batalkan Booking?</h3>
+    <p style="color: var(--muted); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1.3rem;">
+      Tindakan ini tidak bisa dibatalkan kembali. Sesuai kebijakan, dana akan dikembalikan sebesar
+      <strong style="color: var(--gold);">30%</strong> dari total pembayaran.
+    </p>
+
+    <div id="cancelBookingDetail" class="schedule-body" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 14px; padding: 1.1rem 1.2rem;"></div>
+
+    <div style="background: rgba(93,202,165,0.06); border: 1px solid rgba(93,202,165,0.2); border-radius: 14px; padding: 0.9rem 1.2rem; margin-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+      <span style="color: var(--muted); font-size: 0.8rem;">Dana Dikembalikan</span>
+      <strong id="cancelRefundAmount" style="color: #5dcaa5; font-size: 1.25rem;">Rp 0</strong>
+    </div>
+
+    <div style="display: flex; gap: 0.8rem; margin-top: 1.5rem;">
+      <button type="button" onclick="closeCancelModal()" style="flex: 1; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--white); padding: 0.9rem; border-radius: 14px; cursor: pointer; font-weight: 600; font-family: 'Barlow', sans-serif;">Tidak Jadi</button>
+      <button type="button" id="confirmCancelBtn" class="btn-primary" onclick="confirmCancelBooking()" style="flex: 1; padding: 0.9rem; border-radius: 14px;">Ya, Batalkan</button>
+    </div>
+  </div>
+</div>
+
+<div class="chatbot-widget" id="chatbotWidget">
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chatbot-header">
+      <div class="chatbot-header-avatar">🎾</div>
+      <div class="chatbot-header-info">
+        <div class="chatbot-header-name">TennisPro Assistant</div>
+        <div class="chatbot-header-status"><span class="chatbot-status-dot"></span>Online · Siap Membantu</div>
+      </div>
+      <button class="chatbot-close" onclick="toggleChatbot(false)" aria-label="Tutup chat">✕</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbotMessages" aria-live="polite"></div>
+
+    <div class="chatbot-quick-replies" id="chatbotQuickReplies"></div>
+
+    <div class="chatbot-input-row">
+      <input type="text" id="chatbotInput" placeholder="Tulis pertanyaan kamu..." autocomplete="off" onkeydown="handleChatbotKeydown(event)">
+      <button class="chatbot-send" onclick="sendChatMessage()" aria-label="Kirim pesan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <button class="chatbot-fab" id="chatbotFab" onclick="toggleChatbot()" aria-label="Buka chat bantuan TennisPro Assistant">
+    <span class="chatbot-fab-dot"></span>
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+  import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, where, getDocs, updateDoc, doc } 
+    from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+  // Konfigurasi Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyCfXn-e9QbeByLPMghFro9kGYt5zESfWho",
+    authDomain: "tennisprov3.firebaseapp.com",
+    projectId: "tennisprov3",
+    storageBucket: "tennisprov3.firebasestorage.app",
+    messagingSenderId: "1094208207912",
+    appId: "1:1094208207912:web:10e58644d3f2ec44d3c91d"
+  };
+
+  // 1. Inisialisasi Firebase App & Firestore
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // 2. Mengekspos fungsi ke window global untuk diakses file script.js
+  window.db = db;
+  window.collection = collection;
+  window.addDoc = addDoc;
+  window.onSnapshot = onSnapshot;
+  window.query = query;
+  window.orderBy = orderBy;
+  window.where = where;
+  window.getDocs = getDocs;
+  window.updateDoc = updateDoc;
+  window.doc = doc;
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
